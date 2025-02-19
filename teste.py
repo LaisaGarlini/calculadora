@@ -1,5 +1,5 @@
 import pytest
-from script import soma, subtracao, multiplicacao, divisao
+from calculadora import soma, subtracao, multiplicacao, divisao
 
 def teste_soma():
     assert soma(5, 10) == 15
@@ -13,4 +13,4 @@ def teste_multiplicacao():
 def teste_divisao():
     assert divisao(5, 10) == 0.5
     with pytest.raises(ValueError):
-        divisao(5, 10)
+        divisao(5, 0)
