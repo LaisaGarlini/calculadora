@@ -31,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
       - name: Run tests
-        run: pytest test_script.py
+        run: pytest teste.py
   deploy:
     runs-on: ubuntu-latest
     needs: test
