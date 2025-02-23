@@ -13,10 +13,14 @@ def divisao(a, b):
     return a / b
 
 def todas_as_operacoes(a, b):
-    print("Resultado da soma:", soma(a, b))
-    print("Resultado da subtracao:", subtracao(a, b))
-    print("Resultado da multiplicacao:", multiplicacao(a, b))
-    print("Resultado da divisao:", divisao(a, b))
+    return {
+        "soma": soma(a, b),
+        "subtracao": subtracao(a, b),
+        "multiplicacao": multiplicacao(a, b),
+        "divisao": divisao(a, b)
+    }
 
 if __name__ == "__main__":
-    todas_as_operacoes(5, 10)
+    resultados = todas_as_operacoes(5, 10)
+    for operacao, resultado in resultados.items():
+        print(f"Resultado da {operacao}: {resultado}")
