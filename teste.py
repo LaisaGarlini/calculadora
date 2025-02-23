@@ -1,5 +1,6 @@
 import pytest
-from calculadora import soma, subtracao, multiplicacao, divisao, todas_as_operacoes
+from calculadora import soma, subtracao, multiplicacao, divisao
+from calculadora import todas_as_operacoes
 
 
 def teste_soma():

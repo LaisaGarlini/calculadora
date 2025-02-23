@@ -29,4 +29,3 @@ if __name__ == "__main__":
     resultados = todas_as_operacoes(5, 10)
     for operacao, resultado in resultados.items():
         print(f"Resultado da {operacao}: {resultado}")
-        
